@@ -1,0 +1,148 @@
+ /* ================= ROOT VARIABLES ================= */
+:root {
+  --primary-dark: #0A2947;
+  --secondary-dark: #513819;
+
+  --cream: #F3E4C9;
+  --gold-light: #b8a081;
+  --light-green: #D3D4C0;
+
+  --text-light: #f5f1eb;
+  --text-muted: #747674;
+    --beige: #8B5E3C;
+  --white: #ffffff;
+
+  --heading-font: "Cormorant Garamond", serif;
+  --body-font: "Poppins", sans-serif;
+
+  --transition: all 0.4s ease;
+
+  --shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+
+  --radius: 18px;
+}
+
+/* ================= GLOBAL RESET ================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--primary-dark);
+
+  color: var(--text-light);
+
+  font-family: var(--body-font);
+
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading-font);
+
+  font-weight: 600;
+}
+
+p {
+  color: var(--text-muted);
+
+  line-height: 1.8;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ================= NAVBAR ================= */
+
+.luxury-nav {
+  padding: 25px 0;
+
+  background: transparent;
+
+  transition: var(--transition);
+}
+
+.luxury-nav.scrolled {
+  padding: 15px 0;
+
+  background: rgba(13, 16, 14, 0.678);
+
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+  font-family: var(--heading-font);
+
+  font-size: 40px;
+
+  color: var(--gold-light);
+
+  letter-spacing: 4px;
+}
+.navbar-brand:hover {
+  color: var(--white);
+}
+.navbar-brand {
+  font-family: var(--heading-font);
+
+  font-size: 40px;
+
+  color: var(--gold-light);
+
+  letter-spacing: 4px;
+}
+
+.nav-link {
+  color: var(--text-light);
+
+  margin-left: 30px;
+
+  font-size: 14px;
+
+  letter-spacing: 1px;
+
+  transition: var(--transition);
+}
+
+.nav-link:hover {
+  color: var(--gold);
+}
+
+.footer {
+  padding: 80px 0 40px;
+
+  background: #080a09;
+}
+
+.footer h2 {
+  font-size: 60px;
+
+  letter-spacing: 8px;
+
+  color: var(--gold-light);
+}
+
+.footer p {
+  margin-top: 20px;
+}
+
+.footer-line {
+  height: 1px;
+
+  background: rgba(184, 160, 129, 0.2);
+
+  margin: 40px 0;
+}
