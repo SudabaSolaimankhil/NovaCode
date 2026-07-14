@@ -1,3 +1,422 @@
+/* ===== baharah ===== */
+/* ============================
+        TEAM SECTION
+
+
+.team-section {
+
+    background: var(--background-color);
+
+    position: relative;
+
+    overflow:hidden;
+
+}
+
+
+/* background decoration */
+
+.team-section::before {
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    background:rgba(56, 99, 108, 0.15);
+
+    border-radius:50%;
+
+    top:-150px;
+
+    left:-150px;
+
+}
+
+
+
+.team-section::after {
+
+    content:"";
+
+    position:absolute;
+
+    width:300px;
+
+    height:300px;
+
+    background:rgba(94, 194, 221, 0.2);
+
+    border-radius:50%;
+
+    bottom:-120px;
+
+    right:-100px;
+
+}
+
+
+
+.section-heading {
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+
+.team-subtitle {
+
+    display:inline-block;
+
+    color:var(--primary-color);
+
+    background:rgba(37, 133, 188, 0.12);
+
+    padding:8px 22px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.section-heading h2 {
+
+    color:var(--heading-color);
+
+    font-size:3rem;
+
+    font-weight:800;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.section-heading p {
+
+    color:var(--text-color);
+
+    max-width:650px;
+
+    margin:auto;
+
+}
+
+
+
+
+/* Cards */
+
+
+.team-card {
+
+
+    background:
+
+    rgba(255,255,255,.75);
+
+
+    backdrop-filter:blur(15px);
+
+
+     background:rgba(37, 133, 188, 0.12);
+
+
+    border-radius:30px;
+
+
+    padding:40px 30px;
+
+
+    text-align:center;
+
+
+    box-shadow:var(--shadow);
+
+
+    transition:var(--transition);
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+}
+
+
+
+.team-card::before {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:120px;
+
+
+    height:120px;
+
+
+    background:var(--secondary-color);
+
+
+    opacity:.15;
+
+
+    border-radius:50%;
+
+
+    top:-40px;
+
+
+    right:-40px;
+
+
+}
+
+
+
+.team-card:hover {
+
+
+    transform:translateY(-15px);
+
+
+    box-shadow:0 25px 50px rgba(40,54,24,.2);
+
+
+}
+
+
+
+
+/* Image */
+
+
+.member-image {
+
+
+    width:120px;
+
+
+    height:120px;
+
+
+    margin:auto;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    border-radius:50%;
+
+
+    background:
+
+    linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+
+
+    color:white;
+
+
+    font-size:2.5rem;
+
+
+    font-weight:800;
+
+
+    margin-bottom:25px;
+
+
+    border:6px solid var(--background-color);
+
+
+    box-shadow:0 10px 25px rgba(188,108,37,.3);
+
+}
+
+
+
+.team-card h3 {
+
+
+    color:var(--heading-color);
+
+
+    font-size:1.5rem;
+
+
+    font-weight:700;
+
+
+}
+
+
+.member-image {
+    width:120px;
+    height:120px;
+    margin:auto;
+    border-radius:50%;
+    overflow:hidden;
+    border:6px solid var(--background-color);
+    box-shadow:0 10px 25px rgba(188,108,37,.3);
+}
+
+
+.member-image img {
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+}
+.team-card span {
+
+
+    display:inline-block;
+
+
+    color:var(--primary-color);
+
+
+    font-weight:600;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+.team-card p {
+
+
+    color:var(--text-color);
+
+
+    line-height:1.7;
+
+
+}
+
+
+
+
+/* Social */
+
+
+.social-icons {
+
+
+    margin-top:25px;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:12px;
+
+
+}
+
+
+
+.social-icons a {
+
+
+    width:42px;
+
+
+    height:42px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    border-radius:50%;
+
+
+    background:rgba(96,108,56,.15);
+
+
+    color:var(--dark-color);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.social-icons a:hover {
+
+
+    background:var(--primary-color);
+
+
+    color:white;
+
+
+    transform:translateY(-5px);
+
+}
+
+
+
+
+
+@media(max-width:768px){
+
+
+    .section-heading h2{
+
+        font-size:2.2rem;
+
+    }
+
+
+}
+/* =====baharah ===== */
 /* ================= ROOT VARIABLES ================= */
 :root {
   --primary-dark: #0a2947;
@@ -375,7 +794,6 @@ Responsive
 }
 /*==================================================
 NAVBAR
-==================================================*/
 
 .custom-navbar {
   padding: 18px 0;
@@ -507,7 +925,6 @@ NAVBAR
 
 /*==================================================
 HERO ANIMATIONS
-==================================================*/
 
 /* Ken Burns Effect */
 
