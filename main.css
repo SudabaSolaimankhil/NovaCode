@@ -1,713 +1,518 @@
 /*==========================
-        COLOR PALETTE
+        COLOR PALETTE */
 
-:root{
-    --dark:#071d26;
-    --dark-2:#092e3d;
-    --primary:#2ba6d6;
-    --secondary:#6090a3;
-    --light:#82a1ad;
-    --card:#2c4047;
-    --card2:#436d7d;
-    --white:#fff;
+:root {
+  --dark: #071d26;
+  --dark-2: #092e3d;
+  --primary: #2ba6d6;
+  --secondary: #6090a3;
+  --light: #82a1ad;
+  --card: #2c4047;
+  --card2: #436d7d;
+  --white: #fff;
+}
+
+CONTACT SECTION .contact-section {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #071d26, #092e3d);
+  padding: 100px 0;
+}
+
+.blur {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  z-index: 0;
+}
+
+.blur-one {
+  width: 280px;
+  height: 280px;
+  background: #2ba6d6;
+  top: -100px;
+  left: -100px;
+  opacity: 0.18;
+}
+
+.blur-two {
+  width: 320px;
+  height: 320px;
+  background: #6090a3;
+  bottom: -120px;
+  right: -120px;
+  opacity: 0.15;
+}
+
+.contact-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-tag {
+  display: inline-block;
+  padding: 8px 22px;
+  border-radius: 30px;
+  background: rgba(43, 166, 214, 0.15);
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.contact-title {
+  color: #071d26;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.contact-text {
+  color: #071d26;
+  line-height: 1.8;
+  margin-bottom: 40px;
 }
 
 /*==========================
-      CONTACT SECTION
+        INFO CARD  */
 
-.contact-section{
-    position:relative;
-    overflow:hidden;
-    background:linear-gradient(135deg,#071d26,#092e3d);
-    padding:100px 0;
+.info-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 18px;
+
+  padding: 22px;
+
+  margin-bottom: 22px;
+
+  transition: 0.4s;
 }
 
-.blur{
-    position:absolute;
-    border-radius:50%;
-    filter:blur(90px);
-    z-index:0;
+.info-card:hover {
+  transform: translateY(-8px);
+
+  border-color: var(--primary);
+
+  box-shadow: 0 20px 45px rgba(43, 166, 214, 0.25);
 }
 
-.blur-one{
-    width:280px;
-    height:280px;
-    background:#2ba6d6;
-    top:-100px;
-    left:-100px;
-    opacity:.18;
+.icon-box {
+  width: 65px;
+  height: 65px;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #2ba6d6, #6090a3);
+
+  color: white;
+
+  font-size: 22px;
 }
 
-.blur-two{
-    width:320px;
-    height:320px;
-    background:#6090a3;
-    bottom:-120px;
-    right:-120px;
-    opacity:.15;
+.info-card h6 {
+  color: #071d26;
+  margin-bottom: 5px;
 }
 
-.contact-section .container{
-    position:relative;
-    z-index:2;
-}
-
-.contact-tag{
-
-    display:inline-block;
-    padding:8px 22px;
-    border-radius:30px;
-    background:rgba(43,166,214,.15);
-    color:var(--primary);
-    font-weight:600;
-    margin-bottom:20px;
-}
-
-.contact-title{
-
-    color:white;
-    font-size:52px;
-    font-weight:700;
-    line-height:1.2;
-    margin-bottom:20px;
-}
-
-.contact-text{
-
-    color:#d5d5d5;
-    line-height:1.8;
-    margin-bottom:40px;
+.info-card p {
+  color: #071d26;
+  margin: 0;
 }
 
 /*==========================
-        INFO CARD
+        FORM  */
 
-.info-card{
+.contact-form {
+  background: rgba(255, 255, 255, 0.05);
 
-    display:flex;
-    align-items:center;
-    gap:20px;
+  backdrop-filter: blur(20px);
 
-    background:rgba(255,255,255,.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 
-    backdrop-filter:blur(18px);
+  border-radius: 28px;
 
-    border:1px solid rgba(255,255,255,.08);
+  padding: 45px;
 
-    border-radius:18px;
-
-    padding:22px;
-
-    margin-bottom:22px;
-
-    transition:.4s;
+  transition: 0.4s;
 }
 
-.info-card:hover{
-
-    transform:translateY(-8px);
-
-    border-color:var(--primary);
-
-    box-shadow:0 20px 45px rgba(43,166,214,.25);
+.contact-form:hover {
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.3);
 }
 
-.icon-box{
+.contact-form h3 {
+  color: white;
 
-    width:65px;
-    height:65px;
+  margin-bottom: 35px;
 
-    border-radius:50%;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    background:linear-gradient(135deg,#2ba6d6,#6090a3);
-
-    color:white;
-
-    font-size:22px;
+  font-weight: 700;
 }
 
-.info-card h6{
+.form-control {
+  background: #2c4047;
 
-    color:white;
-    margin-bottom:5px;
+  border: none;
+
+  color: white;
+
+  border-radius: 14px;
+
+  padding: 15px 20px;
+
+  transition: 0.35s;
 }
 
-.info-card p{
-
-    color:#d9d9d9;
-    margin:0;
+.form-control::placeholder {
+  color: #cfcfcf;
 }
 
-/*==========================
-        FORM
+.form-control:focus {
+  background: #2c4047;
 
-.contact-form{
+  color: white;
 
-    background:rgba(255,255,255,.05);
+  box-shadow: 0 0 0 4px rgba(43, 166, 214, 0.2);
 
-    backdrop-filter:blur(20px);
-
-    border:1px solid rgba(255,255,255,.08);
-
-    border-radius:28px;
-
-    padding:45px;
-
-    transition:.4s;
+  border: 1px solid var(--primary);
 }
 
-.contact-form:hover{
-
-    box-shadow:0 25px 55px rgba(0,0,0,.3);
-}
-
-.contact-form h3{
-
-    color:white;
-
-    margin-bottom:35px;
-
-    font-weight:700;
-}
-
-.form-control{
-
-    background:#2c4047;
-
-    border:none;
-
-    color:white;
-
-    border-radius:14px;
-
-    padding:15px 20px;
-
-    transition:.35s;
-}
-
-.form-control::placeholder{
-
-    color:#cfcfcf;
-}
-
-.form-control:focus{
-
-    background:#2c4047;
-
-    color:white;
-
-    box-shadow:0 0 0 4px rgba(43,166,214,.2);
-
-    border:1px solid var(--primary);
-}
-
-textarea{
-
-    resize:none;
+textarea {
+  resize: none;
 }
 
 /*==========================
-          BUTTON
+          BUTTON*/
 
-.contact-btn{
+.contact-btn {
+  border: none;
 
-    border:none;
+  background: linear-gradient(135deg, #2ba6d6, #6090a3);
 
-    background:linear-gradient(135deg,#2ba6d6,#6090a3);
+  color: white;
 
-    color:white;
+  padding: 16px 35px;
 
-    padding:16px 35px;
+  border-radius: 50px;
 
-    border-radius:50px;
+  font-size: 17px;
 
-    font-size:17px;
+  font-weight: 600;
 
-    font-weight:600;
-
-    transition:.4s;
+  transition: 0.4s;
 }
 
-.contact-btn:hover{
+.contact-btn:hover {
+  transform: translateY(-5px);
 
-    transform:translateY(-5px);
+  box-shadow: 0 18px 35px rgba(43, 166, 214, 0.4);
 
-    box-shadow:0 18px 35px rgba(43,166,214,.4);
-
-    background:linear-gradient(135deg,#6090a3,#2ba6d6);
+  background: linear-gradient(135deg, #6090a3, #2ba6d6);
 }
 
 /*==========================
-      RESPONSIVE
+      RESPONSIVE */
 
-@media(max-width:991px){
+@media (max-width: 991px) {
+  .contact-title {
+    font-size: 38px;
+  }
 
-.contact-title{
+  .contact-form {
+    margin-top: 20px;
 
-font-size:38px;
-
+    padding: 35px;
+  }
 }
 
-.contact-form{
+@media (max-width: 576px) {
+  .contact-title {
+    font-size: 30px;
+  }
 
-margin-top:20px;
+  .info-card {
+    flex-direction: column;
 
-padding:35px;
+    text-align: center;
+  }
 
-}
+  .contact-form {
+    padding: 25px;
+  }
 
-}
-
-@media(max-width:576px){
-
-.contact-title{
-
-font-size:30px;
-
-}
-
-.info-card{
-
-flex-direction:column;
-
-text-align:center;
-
-}
-
-.contact-form{
-
-padding:25px;
-
-}
-
-.contact-btn{
-
-width:100%;
-
-}
-
+  .contact-btn {
+    width: 100%;
+  }
 }
 /* ===== baharah ===== */
-/* ============================
-        TEAM SECTION
+/* ============================ */
+TEAM SECTION .team-section {
+  background: var(--background-color);
 
+  position: relative;
 
-.team-section {
-
-    background: var(--background-color);
-
-    position: relative;
-
-    overflow:hidden;
-
+  overflow: hidden;
 }
-
-
-/* background decoration */
 
 .team-section::before {
+  content: "";
 
-    content:"";
+  position: absolute;
 
-    position:absolute;
+  width: 350px;
 
-    width:350px;
+  height: 350px;
 
-    height:350px;
+  background: rgba(56, 99, 108, 0.15);
 
-    background:rgba(56, 99, 108, 0.15);
+  border-radius: 50%;
 
-    border-radius:50%;
+  top: -150px;
 
-    top:-150px;
-
-    left:-150px;
-
+  left: -150px;
 }
-
-
 
 .team-section::after {
+  content: "";
 
-    content:"";
+  position: absolute;
 
-    position:absolute;
+  width: 300px;
 
-    width:300px;
+  height: 300px;
 
-    height:300px;
+  background: rgba(94, 194, 221, 0.2);
 
-    background:rgba(94, 194, 221, 0.2);
+  border-radius: 50%;
 
-    border-radius:50%;
+  bottom: -120px;
 
-    bottom:-120px;
-
-    right:-100px;
-
+  right: -100px;
 }
-
-
 
 .section-heading {
+  position: relative;
 
-    position:relative;
-
-    z-index:2;
-
+  z-index: 2;
 }
-
-
 
 .team-subtitle {
+  display: inline-block;
 
-    display:inline-block;
+  color: var(--primary-color);
 
-    color:var(--primary-color);
+  background: rgba(37, 133, 188, 0.12);
 
-    background:rgba(37, 133, 188, 0.12);
+  padding: 8px 22px;
 
-    padding:8px 22px;
+  border-radius: 50px;
 
-    border-radius:50px;
+  font-weight: 700;
 
-    font-weight:700;
+  letter-spacing: 1px;
 
-    letter-spacing:1px;
-
-    margin-bottom:15px;
-
+  margin-bottom: 15px;
 }
-
-
 
 .section-heading h2 {
+  color: var(--heading-color);
 
-    color:var(--heading-color);
+  font-size: 3rem;
 
-    font-size:3rem;
+  font-weight: 800;
 
-    font-weight:800;
-
-    margin-bottom:15px;
-
+  margin-bottom: 15px;
 }
-
-
 
 .section-heading p {
+  color: var(--text-color);
 
-    color:var(--text-color);
+  max-width: 650px;
 
-    max-width:650px;
-
-    margin:auto;
-
+  margin: auto;
 }
-
-
-
 
 /* Cards */
 
-
 .team-card {
+  background: rgba(255, 255, 255, 0.75);
 
+  backdrop-filter: blur(15px);
 
-    background:
+  background: rgba(37, 133, 188, 0.12);
 
-    rgba(255,255,255,.75);
+  border-radius: 30px;
 
+  padding: 40px 30px;
 
-    backdrop-filter:blur(15px);
+  text-align: center;
 
+  box-shadow: var(--shadow);
 
-     background:rgba(37, 133, 188, 0.12);
+  transition: var(--transition);
 
+  position: relative;
 
-    border-radius:30px;
-
-
-    padding:40px 30px;
-
-
-    text-align:center;
-
-
-    box-shadow:var(--shadow);
-
-
-    transition:var(--transition);
-
-
-    position:relative;
-
-
-    overflow:hidden;
-
+  overflow: hidden;
 }
-
-
 
 .team-card::before {
+  content: "";
 
+  position: absolute;
 
-    content:"";
+  width: 120px;
 
+  height: 120px;
 
-    position:absolute;
+  background: var(--secondary-color);
 
+  opacity: 0.15;
 
-    width:120px;
+  border-radius: 50%;
 
+  top: -40px;
 
-    height:120px;
-
-
-    background:var(--secondary-color);
-
-
-    opacity:.15;
-
-
-    border-radius:50%;
-
-
-    top:-40px;
-
-
-    right:-40px;
-
-
+  right: -40px;
 }
-
-
 
 .team-card:hover {
+  transform: translateY(-15px);
 
-
-    transform:translateY(-15px);
-
-
-    box-shadow:0 25px 50px rgba(40,54,24,.2);
-
-
+  box-shadow: 0 25px 50px rgba(40, 54, 24, 0.2);
 }
-
-
-
 
 /* Image */
 
-
 .member-image {
+  width: 120px;
 
+  height: 120px;
 
-    width:120px;
+  margin: auto;
 
+  display: flex;
 
-    height:120px;
+  align-items: center;
 
+  justify-content: center;
 
-    margin:auto;
+  border-radius: 50%;
 
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
 
-    display:flex;
+  color: white;
 
+  font-size: 2.5rem;
 
-    align-items:center;
+  font-weight: 800;
 
+  margin-bottom: 25px;
 
-    justify-content:center;
+  border: 6px solid var(--background-color);
 
-
-    border-radius:50%;
-
-
-    background:
-
-    linear-gradient(
-        135deg,
-        var(--primary-color),
-        var(--secondary-color)
-    );
-
-
-    color:white;
-
-
-    font-size:2.5rem;
-
-
-    font-weight:800;
-
-
-    margin-bottom:25px;
-
-
-    border:6px solid var(--background-color);
-
-
-    box-shadow:0 10px 25px rgba(188,108,37,.3);
-
+  box-shadow: 0 10px 25px rgba(188, 108, 37, 0.3);
 }
-
-
 
 .team-card h3 {
+  color: var(--heading-color);
 
+  font-size: 1.5rem;
 
-    color:var(--heading-color);
-
-
-    font-size:1.5rem;
-
-
-    font-weight:700;
-
-
+  font-weight: 700;
 }
-
 
 .member-image {
-    width:120px;
-    height:120px;
-    margin:auto;
-    border-radius:50%;
-    overflow:hidden;
-    border:6px solid var(--background-color);
-    box-shadow:0 10px 25px rgba(188,108,37,.3);
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid var(--background-color);
+  box-shadow: 0 10px 25px rgba(188, 108, 37, 0.3);
 }
-
 
 .member-image img {
+  width: 100%;
+  height: 100%;
 
-    width:100%;
-    height:100%;
-
-    object-fit:cover;
-
+  object-fit: cover;
 }
 .team-card span {
+  display: inline-block;
 
+  color: var(--primary-color);
 
-    display:inline-block;
+  font-weight: 600;
 
-
-    color:var(--primary-color);
-
-
-    font-weight:600;
-
-
-    margin-bottom:15px;
-
-
+  margin-bottom: 15px;
 }
-
-
 
 .team-card p {
+  color: var(--text-color);
 
-
-    color:var(--text-color);
-
-
-    line-height:1.7;
-
-
+  line-height: 1.7;
 }
-
-
-
 
 /* Social */
 
-
 .social-icons {
+  margin-top: 25px;
 
+  display: flex;
 
-    margin-top:25px;
+  justify-content: center;
 
-
-    display:flex;
-
-
-    justify-content:center;
-
-
-    gap:12px;
-
-
+  gap: 12px;
 }
-
-
 
 .social-icons a {
+  width: 42px;
 
+  height: 42px;
 
-    width:42px;
+  display: flex;
 
+  align-items: center;
 
-    height:42px;
+  justify-content: center;
 
+  border-radius: 50%;
 
-    display:flex;
+  background: rgba(96, 108, 56, 0.15);
 
+  color: var(--dark-color);
 
-    align-items:center;
-
-
-    justify-content:center;
-
-
-    border-radius:50%;
-
-
-    background:rgba(96,108,56,.15);
-
-
-    color:var(--dark-color);
-
-
-    transition:.3s;
-
-
+  transition: 0.3s;
 }
-
-
 
 .social-icons a:hover {
+  background: var(--primary-color);
 
+  color: white;
 
-    background:var(--primary-color);
-
-
-    color:white;
-
-
-    transform:translateY(-5px);
-
+  transform: translateY(-5px);
 }
 
-
-
-
-
-@media(max-width:768px){
-
-
-    .section-heading h2{
-
-        font-size:2.2rem;
-
-    }
-
-
+@media (max-width: 768px) {
+  .section-heading h2 {
+    font-size: 2.2rem;
+  }
 }
 /* =====baharah ===== */
 /* ================= ROOT VARIABLES ================= */
@@ -1086,14 +891,14 @@ Responsive
   }
 }
 /*==================================================
-NAVBAR
+NAVBAR */
 
 .custom-navbar {
   padding: 18px 0;
 
   transition: 0.45s;
 
-  background: transparent;
+  background: #0a2947;
 
   z-index: 9999;
 }
@@ -1216,8 +1021,8 @@ NAVBAR
   }
 }
 
-/*==================================================
-HERO ANIMATIONS
+/* ==================================================
+HERO ANIMATIONS */
 
 /* Ken Burns Effect */
 
